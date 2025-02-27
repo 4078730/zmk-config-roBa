@@ -40,6 +40,11 @@
             bindings = <&kp EQUAL>;
             key-positions = <24 25>;
         };
+
+        ctrl+shift+T {
+            bindings = <&kp LS(LC(T))>;
+            key-positions = <22 10 4>;
+        };
     };
 
     macros {
@@ -67,21 +72,10 @@
 
         default_layer {
             bindings = <
-&kp Q    &kp W         &kp E         &kp R                        &kp T                                                          &kp Y        &kp U  &lt 7 I    &kp O    &kp P
-&lt 1 A  &kp S         &kp D         &kp F                        &kp G        &kp ESC                            &kp K_FORWARD  &kp H        &kp J  &kp K      &kp L    &kp ENTER
-&lt 2 Z  &kp X         &kp C         &kp V                        &kp B        &kp TAB                            &kp K_BACK     &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
-&lt 3 Z  &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 5 INT_HENKAN  &lt 6 SPACE  &lt_to_layer_0 5 INT_MUHENKAN      &kp BACKSPACE  &lt 0 ENTER                             &kp DEL
-            >;
-
-            sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
-        };
-
-        ctrl {
-            bindings = <
-&kp LC(TAB)  &kp LC(W)     &kp LC(E)     &kp LC(R)                    &kp T                                                          &kp Y        &kp U  &lt 7 I    &kp O    &kp P
-&kp A        &kp S         &kp D         &kp F                        &kp G        &kp LS(LG(S))                      &kp MINUS      &kp H        &kp J  &kp K      &kp L    &kp SQT
-&kp Z        &kp X         &kp C         &kp V                        &kp B        &kp COLON                          &kp SEMICOLON  &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
-&kp LCTRL    &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 8 INT_HENKAN  &lt 6 SPACE  &lt_to_layer_0 5 INT_MUHENKAN      &kp BACKSPACE  &lt 0 ENTER                             &kp DEL
+&kp Q             &kp W         &kp E         &kp R                        &kp T                                                          &kp Y    &kp U  &kp I      &kp O    &kp P
+&mt LCTRL A       &kp S         &kp D         &kp F                        &kp G        &kp ESC                            &kp K_FORWARD  &kp H    &kp J  &kp K      &kp L    &kp ENTER
+&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                        &kp B        &kp TAB                            &kp K_BACK     &kp N    &kp M  &kp COMMA  &kp DOT  &kp SLASH
+&lt 2 Z           &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 4 INT_HENKAN  &lt 5 SPACE  &lt_to_layer_0 4 INT_MUHENKAN      &kp BACKSPACE  &kp DEL                             &kp BACKSLASH
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
@@ -89,10 +83,10 @@
 
         shift {
             bindings = <
-&kp Q      &kp W         &kp E         &kp R                        &kp T                                                          &kp Y        &kp U  &lt 7 I    &kp O    &kp P
+&kp Q      &kp W         &kp E         &kp R                        &kp T                                                          &kp Y        &kp U  &lt 6 I    &kp O    &kp P
 &kp A      &kp S         &kp D         &kp F                        &kp G        &kp LS(LG(S))                      &kp MINUS      &kp H        &kp J  &kp K      &kp L    &kp SQT
 &kp Z      &kp X         &kp C         &kp V                        &kp B        &kp COLON                          &kp SEMICOLON  &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
-&kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 8 INT_HENKAN  &lt 6 SPACE  &lt_to_layer_0 5 INT_MUHENKAN      &kp BACKSPACE  &lt 0 ENTER                             &kp DEL
+&kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 7 INT_HENKAN  &lt 5 SPACE  &lt_to_layer_0 4 INT_MUHENKAN      &kp BACKSPACE  &lt 0 ENTER                             &kp DEL
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
@@ -158,10 +152,10 @@
 
         layer_8 {
             bindings = <
-&kp Q             &kp W         &kp E         &kp R                        &kp T                                                          &kp Y        &kp U  &lt 7 I    &kp O    &kp P
+&kp Q             &kp W         &kp E         &kp R                        &kp T                                                          &kp Y        &kp U  &lt 6 I    &kp O    &kp P
 &kp A             &kp S         &kp D         &kp F                        &kp G        &kp LS(LG(S))                      &kp MINUS      &kp H        &kp J  &kp K      &kp L    &kp SQT
 &mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                        &kp B        &kp COLON                          &kp SEMICOLON  &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
-&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 8 INT_HENKAN  &lt 6 SPACE  &lt_to_layer_0 5 INT_MUHENKAN      &kp BACKSPACE  &lt 0 ENTER                             &kp DEL
+&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 7 INT_HENKAN  &lt 5 SPACE  &lt_to_layer_0 4 INT_MUHENKAN      &kp BACKSPACE  &lt 0 ENTER                             &kp DEL
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
@@ -169,10 +163,10 @@
 
         layer_10 {
             bindings = <
-&kp Q      &kp W         &kp E         &kp R                        &kp T                                                          &kp Y        &kp U  &lt 7 I    &kp O    &kp P
+&kp Q      &kp W         &kp E         &kp R                        &kp T                                                          &kp Y        &kp U  &lt 6 I    &kp O    &kp P
 &kp A      &kp S         &kp D         &kp F                        &kp G        &kp LS(LG(S))                      &kp MINUS      &kp H        &kp J  &kp K      &kp L    &kp SQT
 &kp X      &kp Z         &kp C         &kp V                        &kp B        &kp COLON                          &kp SEMICOLON  &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
-&kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 8 INT_HENKAN  &lt 6 SPACE  &lt_to_layer_0 5 INT_MUHENKAN      &kp BACKSPACE  &lt 0 ENTER                             &kp DEL
+&kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &lt_to_layer_0 7 INT_HENKAN  &lt 5 SPACE  &lt_to_layer_0 4 INT_MUHENKAN      &kp BACKSPACE  &lt 0 ENTER                             &kp DEL
             >;
 
             sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>;
